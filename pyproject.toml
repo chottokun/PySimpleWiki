@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysimplewiki"
+version = "0.1.0"
+description = "Python port of SimpleWiki — a local OKF v0.2 wiki server (read-only core first)"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+# Dependencies are intentionally empty at scaffold stage.
+# The HTTP server / Markdown rendering library policy is decided
+# when Stage 1 starts (see docs/port-plan.md).
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
